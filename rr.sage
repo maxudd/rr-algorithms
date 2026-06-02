@@ -1,7 +1,3 @@
-R.<x> = QQ[]
-der = R.derivation()
-A.<D> = R['D',der]
-
 def null_space_vector(M, nonzero=False):
     if nonzero:
         nonzero_indices = [i for i in range(M.nrows()) if not M.row(i).is_zero()]
